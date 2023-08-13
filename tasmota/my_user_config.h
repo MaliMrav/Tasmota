@@ -54,7 +54,9 @@
 #ifdef ESP8266
 #define FALLBACK_MODULE        SONOFF_BASIC      // [Module2] Select default module on fast reboot where USER_MODULE is user template
 //#define USER_TEMPLATE "{\"NAME\":\"Generic\",\"GPIO\":[1,1,1,1,1,1,1,1,1,1,1,1,1,1],\"FLAG\":0,\"BASE\":18}"  // [Template] Set JSON template
-#define USER_TEMPLATE "{\"NAME\":\"NodeMCU\",\"GPIO\":[1,1,1,1,640,608,1,1,1,1,1,1,1,1],\"FLAG\":0,\"BASE\":18}"  // [Template] Set JSON template
+//#define USER_TEMPLATE "{\"NAME\":\"NodeMCU\",\"GPIO\":[1,1,1,1,640,608,1,1,1,1,1,1,1,1],\"FLAG\":0,\"BASE\":18}"  // [Template] Set JSON template
+#define USER_TEMPLATE "{\"NAME\":\"MakeGood\",\"GPIO\":[0,0,0,0,0,0,0,0,0,0,54,0,0],\"FLAG\":0,\"BASE\":54}"  // [Template] Set JSON template
+
 #endif  // ESP8266
 #ifdef ESP32
 #define FALLBACK_MODULE        WEMOS             // [Module2] Select default module on fast reboot where USER_MODULE is user template
